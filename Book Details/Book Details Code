@@ -33,7 +33,7 @@ class bookDetails
 		String author;
 		int price;
 		int numPages;
-		System.out.println("Enter the number of books\n");
+		System.out.println("Enter the number of books");
 		n = s.nextInt();
 		Books[] b = new Books[n];
 		for(int i=0;i<n;i++)
@@ -52,5 +52,7 @@ class bookDetails
 		{
 			System.out.println(b[i]);
 		}
+		System.out.println("Name:M S Shailesh");
+		System.out.println("USN: 1BM23CS172");
 	}
 }

@@ -1,0 +1,37 @@
+class account
+{
+	int withdraw,deposit,accountNum;
+	String CustomerName;
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter the Name");
+	CustomerName=s.nextLine();
+	System.out.println("Enter the Account Number");
+	accountNum=s.nextInt();
+	void withdraw(int balance)
+	{
+		withdraw=s.nextInt();
+		balance=balance-withdraw;
+		System.out.println();
+	}
+	int deposit()
+	{
+		deposit=s.nextInt();
+		return deposit;
+	}
+	void display(int balance)
+	{
+		System.out.println("Customer Name: "+CustomerName);
+		System.out.println("Account Number: "+accountNum);
+		System.out.println("Balance: "+balance);
+	}
+}
+
+class SavingAccount
+{
+	System.out.println("-----------MENU----------");
+	System.out.println("1.Deposit");
+	System.out.println("2.Withdraw");
+	System.out.println("3.compute Interest and display amount");
+	System.out.println("4.Display");
+	System.out.println("5.Exit");
+}
